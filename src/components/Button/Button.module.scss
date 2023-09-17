@@ -1,0 +1,22 @@
+.button {
+  background-color: var(--accent-color);
+  color: var(--light-font-color);
+  border: none;
+  border-radius: 10px;
+  min-width: 100px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    cursor: default;
+    &:hover {
+      opacity: 0.2;
+    }
+  }
+}

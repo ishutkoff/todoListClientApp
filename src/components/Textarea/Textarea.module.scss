@@ -1,0 +1,71 @@
+.textarea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+
+  span {
+    position: absolute;
+    left: 11px;
+  }
+
+  label {
+    color: var(--gray, #a7b1bd);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 10px 15px;
+    outline: none;
+
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    background: #fff;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      box-shadow: 0 0 0 30px #fff inset !important;
+    }
+
+    &:focus {
+      outline: solid;
+      outline-width: 1px;
+      outline-color: var(--accent-color);
+    }
+  }
+}
+
+.label {
+  color: var(--gray);
+  background: #fff;
+  padding: 0 5px;
+  top: 50%;
+  margin-top: -7px;
+  font-size: 12px;
+  transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
+}
+
+.selected {
+}
+
+.withIcon {
+  input {
+    padding-left: 35px;
+  }
+}
+
+.icon {
+  color: transparent;
+  position: absolute;
+  left: 9px;
+}
